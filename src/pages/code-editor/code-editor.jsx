@@ -3,7 +3,7 @@ import 'prismjs/themes/prism.css'
 import '../../App.css'
 import SyntaxHighlighter from '../../components/syntax-highlighter'
 
-function CodeEditor() {
+export default function CodeEditor() {
   let defaultValue = `import React from "react";
 import ReactDOM from "react-dom";
 
@@ -28,5 +28,3 @@ ReactDOM.render(<App />, document.getElementById("root"));`
     </>
   )
 }
-
-export default CodeEditor

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import './syntax-highlighter.css'
 import Prism from 'prismjs'
 
-const SyntaxHighlighter = ({ children }) => {
+export default function SyntaxHighlighter({ children }) {
   useEffect(() => {
     Prism.highlightAll()
   }, [children])
@@ -16,5 +16,3 @@ const SyntaxHighlighter = ({ children }) => {
     </>
   )
 }
-
-export default SyntaxHighlighter
